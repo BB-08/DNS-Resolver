@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Extra: your beige background and coding font */
+body {
+  background-color: #f5f5dc;
+  font-family: 'Fira Code', monospace;
+}

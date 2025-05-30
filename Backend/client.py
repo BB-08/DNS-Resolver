@@ -3,8 +3,10 @@ import time
 import struct
 from resolver import build_dns_query, send_dns_query, parse_dns_response
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # 💡 Enable CORS for all routes
 
 @app.route('/resolve', methods=['GET'])
 def resolve_api():
